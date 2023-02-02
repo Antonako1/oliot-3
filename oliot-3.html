@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="oliot-3.js" defer></script>
+    <title>Document</title>
+    <style>
+        .hidden{display: none;}
+        .show{display: block;}
+        body{
+            background-image: url('mainmenu.jpg');
+            color: black;
+            font-size: x-large;
+            font-family: monospace;
+        }
+        #stats{
+            background-color: rgba(255, 255, 255, 0.454);
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn" onclick="sigma.play(); sigma.nouseTasolle(); sigma.loseLife(); sigma.peliLoppui(); sigma.showInfo();">Pelaa</button>
+    <button type="button" onclick="restart()" id="btn2" class="hidden">Aloita uudelleen</button>
+    <p id="stats"></p>
+</body>
+</html>
